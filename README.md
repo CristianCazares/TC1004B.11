@@ -1,2 +1,4 @@
-# TC1004B.11
-TC1004B.11 | Implementación de IOT
+# Implementación de IOT
+## Cristian Javier Cázares Molina
+### TC1004B
+
