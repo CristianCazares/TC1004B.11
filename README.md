@@ -6,19 +6,22 @@ Version control repositorie for projects made during the class of IOT Implementa
 
 ## GitHub commands:
 ### Set Up:
-* a
-* b
-* c
-* d
+```
+$ git status
+$ git add .
+$ git status
+```
 ### Commit:
-* a
-* b
-* c 
-* d
-
+```
+$ git commit -m "Message"
+```
+### Push
+```
+$ git push origin main
+```
 
 ## C compiling:
-<pre>
-    $gcc file.c -o file       (compile)
-    $./file                   (execute)
-</pre>
+```
+$ gcc file.c -o file       (compile)
+$ ./file                   (execute)
+```
