@@ -1,4 +1,4 @@
-//Uses pipes so the output os ls is directly the input of wc -l
+//Uses pipes, a form of communication between process. Here the output os ls is directly the input of wc -l
 #include<unistd.h>
 
 int main(){

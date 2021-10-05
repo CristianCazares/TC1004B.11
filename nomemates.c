@@ -1,3 +1,4 @@
+//Signals, another form of communication between process
 #include<signal.h>
 #include<stdio.h>
 #include<unistd.h>
