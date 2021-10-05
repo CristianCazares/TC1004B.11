@@ -1,3 +1,4 @@
+//Uses pipes so the output os ls is directly the input of wc -l
 #include<unistd.h>
 
 int main(){

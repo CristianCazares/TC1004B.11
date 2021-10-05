@@ -1,3 +1,4 @@
+//uses read and write
 #include<stdio.h>
 #include<unistd.h>
 #include<ctype.h>
@@ -11,6 +12,6 @@ int main(){
         may = toupper(c);
         write(STDOUT_FILENO,&may,1);
     }while(n != 0);
-    
+
     return 0;
 }
