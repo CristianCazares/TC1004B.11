@@ -3,8 +3,8 @@
 
 #define NUM_THREADS 10000
 int saldo;
-//Se usan locks para asegurar que un hilo se corra a la vez
-pthread_mutex_t saldoLock = PTHREAD_MUTEX_INITIALIZER;
+
+pthread_mutex_t saldoLock = PTHREAD_MUTEX_INITIALIZER; //Locks are used to make sure each thread runs one at a time.
 
 void * suma100(void *arg){
     pthread_mutex_lock(&saldoLock);
