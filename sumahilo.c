@@ -1,13 +1,17 @@
 #include <stdio.h>
 #include <pthread.h>
 
-#define NUM_THREADS 100
+#define NUM_THREADS 10000
 int saldo;
+//Se usan locks para asegurar que un hilo se corra a la vez
+pthread_mutex_t saldoLock = PTHREAD_MUTEX_INITIALIZER;
 
 void * suma100(void *arg){
+    pthread_mutex_lock(&saldoLock);
     int lsaldo = saldo;
     lsaldo += 100;
     saldo = lsaldo;
+    pthread_mutex_unlock(&saldoLock);
 
     pthread_exit(NULL); //Here each thread notifies that it has ended
 }
