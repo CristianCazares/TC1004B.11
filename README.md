@@ -25,3 +25,7 @@ $ git push origin main
 $ gcc file.c -o file       (compile)
 $ ./file                   (execute)
 ```
+It some cases, it is necessary to include certain libraries.
+```
+$ gcc file.c -o file -l{library name}
+```
