@@ -5,6 +5,10 @@
 Version control repository for projects made during the class of IOT Implementation at Tecnologico de Monterrey.
 
 ## GitHub commands:
+### Clone:
+```
+$ git clone [repo_url]
+```
 ### Set Up:
 ```
 $ git status
